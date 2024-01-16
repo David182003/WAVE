@@ -1,8 +1,11 @@
+/* Styles Global */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Header Menu */
 header{
     height: auto;
     width: 100%;
@@ -23,29 +26,11 @@ header h1{
     width: auto;
     font-family:'Times New Roman', Times, serif;
 }
-header a{
-    text-decoration: none;
-    background-color: rgb(255, 255, 255);
-    color:rgb(78, 78, 78);
-    font-family:    Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 500;
-}
-.Empezar{
-    background-color: black;
-    padding:  0.5rem 1rem;
-    color: white;
-    margin-left: 4%;
-    font-size:medium;
-    font-weight: 100;
-}
 header .button{
     border: 0;
     display: none;
 }
-header img{
-
-}
-nav{
+header nav{
     width:70%;
     overflow: hidden;
     display: flex;
@@ -64,7 +49,29 @@ header .li{
     margin: 0 .5em;
     list-style:none;
 }
+header a{
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color:rgb(78, 78, 78);
+    font-family:    Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 500;
+}
+.Empezar{
+    background-color: black;
+    padding:  0.5rem 1.6rem;
+    color: white;
+    margin-left: 4%;
+    font-size:medium;
+    font-weight: 100;
+}
+
+/* Media Query  Responsive Modo Phone */
 @media screen and (max-width:480px){
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
     header{
         padding: 5%;
         background-color: rgb(255, 255, 255);
@@ -102,14 +109,79 @@ header .li{
         text-align: center;
         padding: 1rem 0%;   
     }
+    /* Main Style */
+    
 }
-    main{
-    width:100%;
-    height:100dvh;
-    background-color:rgb(245, 245, 245);
-    }
-    aside{
-    width: 100%;
+.container {
+    display: flex;
     height: 100dvh;
-    background-color: aqua;
+    justify-content: center;
+  }
+  
+  .square {
+    width: 40%;
+    height: 100dvh;
+  }
+  
+  .red {
+    display: grid;
+  
+  }
+  .Content{
+    padding-top: 30%;
+    height: 100dvh;
+  }
+  .main-h1{
+    font-size:4em;
+    font-weight: 100;
+    font-family: sans-serif;
+  }
+  .main-p{
+    margin-top: 2%;
+  }
+  .main-Empezar{
+    margin-top: 2%;
+    margin-left: 0;
+  }
+  .blue {
+    padding-top: 5%;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  @media (max-width: 600px) {
+    .container {        
+        flex-direction: column;
+        overflow: hidden;
+        background: linear-gradient(rgb(255, 255, 255),white, rgb(0, 68, 255));
     }
+    .Content{   
+        height: 100dvh  ;
+        margin-top: 10%;
+        width: 100%;  
+        margin-left: 5%;
+    }
+    .main-h1{
+        font-size: 2.7em;
+    }
+    .main-p{
+        margin-top: 6%;
+        width: 90%;
+    }
+    .main-Empezar{
+        margin-top: 10%;
+    }
+    .square {
+      width: 100%;
+      margin-top: 0px;
+     
+
+    }
+    .blue{
+        display: none;
+    }
+  }
+  aside{
+    height: 80vh;
+    overflow: hidden;
+    background-color: rgb(255, 255, 255);
+  }
