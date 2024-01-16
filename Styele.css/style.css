@@ -139,10 +139,15 @@ header a{
   }
   .main-p{
     margin-top: 2%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: 100;
   }
   .main-Empezar{
     margin-top: 2%;
     margin-left: 0;
+    border-radius: 5px;
+    font-weight: 500;
   }
   .blue {
     padding-top: 5%;
@@ -153,7 +158,7 @@ header a{
     .container {        
         flex-direction: column;
         overflow: hidden;
-        background: linear-gradient(rgb(255, 255, 255),white, rgb(0, 68, 255));
+        background: linear-gradient(rgb(255, 255, 255),white, rgb(0, 117, 121));
     }
     .Content{   
         height: 100dvh  ;
