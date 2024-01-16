@@ -11,7 +11,7 @@ header{
     align-items: center;
     display: flex;
     padding: 1% 10%;
-    background-color: #fff;
+    background-color: #ffffff;
     box-shadow: 10px 10px 24px 0px rgba(132,152,255,0.29);
     -webkit-box-shadow: 10px 10px 24px 0px rgba(132,152,255,0.29);
     -moz-box-shadow: 10px 10px 24px 0px rgba(132,152,255,0.29);
@@ -54,6 +54,9 @@ header .li{
     list-style:none;
 }
 @media screen and (max-width:480px){
+    header{
+        padding: 5%;
+    }
     header .button{
         display: block;
         cursor: pointer;
