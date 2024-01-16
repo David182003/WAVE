@@ -158,7 +158,7 @@ header a{
     .container {        
         flex-direction: column;
         overflow: hidden;
-        background: linear-gradient(rgb(255, 255, 255),white, rgb(0, 117, 121));
+        background: linear-gradient(rgb(255, 255, 255),white,rgba(255, 255, 255, 0.733), rgb(0, 247, 255));
     }
     .Content{   
         height: 100dvh  ;
